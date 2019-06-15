@@ -28,5 +28,5 @@ public class ServSchoolController {
 	@GetMapping("api/database/all")
 	public List<School> all(){
 		return (List<School>) repository.findAll();
-}
+	}
 }

@@ -11,111 +11,111 @@ import javax.persistence.Table;
 public class School {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
-	private String schoolCode;
-	private String schoolName;
-	private String address;
-	private String city;
-	private String stateCode;
-	private String zipCode;
-	private String province;
-	private String country;
-	private String postalCode;
+	private int ID;
+	private String SchoolCode;
+	private String SchoolName;
+	private String Address;
+	private String City;
+	private String StateCode;
+	private String ZipCode;
+	private String Province;
+	private String Country;
+	private String PostalCode;
 	
-	public int getId() {
-		return id;
+	public int getID() {
+		return ID;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
+	public void setID(int ID) {
+		this.ID = ID;
 	}
 	
 	public String getSchoolCode() {
-		return schoolCode;
+		return SchoolCode;
 	}
 	
-	public void setSchoolCode(String schoolCode) {
-		this.schoolCode = schoolCode;
+	public void setSchoolCode(String SchoolCode) {
+		this.SchoolCode = SchoolCode;
 	}
 	
 	public String getSchoolName() {
-		return schoolName;
+		return SchoolName;
 	}
 	
-	public void setSchoolName(String schoolName) {
-		this.schoolName = schoolName;
+	public void setSchoolName(String SchoolName) {
+		this.SchoolName = SchoolName;
 	}
 	
 	public String getAddress() {
-		return address;
+		return Address;
 	}
 	
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddress(String Address) {
+		this.Address = Address;
 	}
 	
 	public String getCity() {
-		return city;
+		return City;
 	}
 	
-	public void setCity(String city) {
-		this.city = city;
+	public void setCity(String City) {
+		this.City = City;
 	}
 	
 	public String getStateCode() {
-		return stateCode;
+		return StateCode;
 	}
 	
-	public void setStateCode(String stateCode) {
-		this.stateCode = stateCode;
+	public void setStateCode(String StateCode) {
+		this.StateCode = StateCode;
 	}
 	
 	public String getZipCode() {
-		return zipCode;
+		return ZipCode;
 	}
 	
-	public void setZipCode(String zipCode) {
-		this.zipCode = zipCode;
+	public void setZipCode(String ZipCode) {
+		this.ZipCode = ZipCode;
 	}
 	
 	public String getProvince() {
-		return province;
+		return Province;
 	}
 	
-	public void setProvince(String province) {
-		this.province = province;
+	public void setProvince(String Province) {
+		this.Province = Province;
 	}
 	
 	public String getCountry() {
-		return country;
+		return Country;
 	}
 	
-	public void setCountry(String country) {
-		this.country = country;
+	public void setCountry(String Country) {
+		this.Country = Country;
 	}
 	
 	public String getPostalCode() {
-		return postalCode;
+		return PostalCode;
 	}
 	
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
+	public void setPostalCode(String PostalCode) {
+		this.PostalCode = PostalCode;
 	}
 	
 	public String toJson() {
 		String json = "";
 		
 		json += "{";
-		json += "\"id\":" + this.id + ",";
-		json += "\"schoolCode\":\"" + this.schoolCode + "\",";
-		json += "\"schoolName\":\"" + this.schoolName + "\",";
-		json += "\"address\":\"" + this.address + "\",";
-		json += "\"city\":\"" + this.city + "\",";
-		json += "\"stateCode\":\"" + this.stateCode + "\",";
-		json += "\"zipCode\":\"" + this.zipCode + "\",";
-		json += "\"province\":\"" + this.province + "\",";
-		json += "\"country\":\"" + this.country + "\",";
-		json += "\"postalCode\":\"" + this.postalCode + "\"";
+		json += "\"ID\":" + this.ID + ",";
+		json += "\"SchoolCode\":\"" + this.SchoolCode + "\",";
+		json += "\"SchoolName\":\"" + this.SchoolName + "\",";
+		json += "\"Address\":\"" + this.Address + "\",";
+		json += "\"City\":\"" + this.City + "\",";
+		json += "\"StateCode\":\"" + this.StateCode + "\",";
+		json += "\"ZipCode\":\"" + this.ZipCode + "\",";
+		json += "\"Province\":\"" + this.Province + "\",";
+		json += "\"Country\":\"" + this.Country + "\",";
+		json += "\"PostalCode\":\"" + this.PostalCode + "\"";
 		json += "}";
 		
 		return json;
@@ -125,16 +125,16 @@ public class School {
 	public String toString() {
 		String text = "";
 		
-		text += this.id;
-		text += "#" + this.schoolCode;
-		text += "#" + this.schoolName;
-		text += "#" + this.address;
-		text += "#" + this.city;
-		text += "#" + this.stateCode;
-		text += "#" + this.zipCode;
-		text += "#" + this.province;
-		text += "#" + this.country;
-		text += "#" + this.postalCode;
+		text += this.ID;
+		text += "#" + this.SchoolCode;
+		text += "#" + this.SchoolName;
+		text += "#" + this.Address;
+		text += "#" + this.City;
+		text += "#" + this.StateCode;
+		text += "#" + this.ZipCode;
+		text += "#" + this.Province;
+		text += "#" + this.Country;
+		text += "#" + this.PostalCode;
 		
 		return text;
 }

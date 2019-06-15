@@ -29,7 +29,7 @@ public class ServFileController {
 				int sucessos = 0;
 				int falhas = 0;
 				
-				String file = "D:\\Programação\\Projetos Java\\ProjectOperationsCSV\\1617FedSchoolCodeList.csv";
+				String file = "D:\\Programação\\Projetos Java\\ProjMavenCSVReader\\1617FedSchoolCodeList.csv";
 				
 				Reader in = new FileReader(file);
 				
@@ -39,7 +39,7 @@ public class ServFileController {
 					try {
 						School school = new School();
 						
-						school.setId(Integer.parseInt(record.get("ID")));
+						school.setID(Integer.parseInt(record.get("ID")));
 						school.setSchoolCode(record.get("SchoolCode"));
 						school.setSchoolName(record.get("SchoolName"));
 						school.setAddress(record.get("Address"));

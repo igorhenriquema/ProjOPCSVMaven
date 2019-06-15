@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: ProjMavenCSVReader
+Implementation-Title: csvreader
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Home
 Implementation-Vendor-Id: br.com.csvreader
